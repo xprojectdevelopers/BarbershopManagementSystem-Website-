@@ -8,11 +8,20 @@ import M1 from '../assets/img/1.png'
 import M2 from '../assets/img/2.png'
 import M3 from '../assets/img/3.png'
 import QuickMessageDialog from '../components/QuickMessage'
+import { motion } from "framer-motion"
 
 const LandingPage = () => {
   return (
     <div className='mb-[-25px] scroll-smooth'>
-        <div className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-[center_bottom_-60px] bg-no-repeat h-[200px] lg:h-135 xl:h-150 flex items-end justify-center'>
+        
+        {/* Hero Section */}
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-[center_bottom_-60px] bg-no-repeat h-[200px] lg:h-135 flex items-end justify-center'
+        >
           <div className='text-white text-center mb-15'>
             <h5 className='uppercase text-xs' style={{fontFamily: "satoshi-medium"}}>Street Style</h5>
             <h1 className='tracking-[0.4px] text-2xl lg:text-[32px]' style={{fontFamily: "satoshi-bold"}}>Welcome to Molave Street's Barbers</h1>
@@ -20,9 +29,16 @@ const LandingPage = () => {
               Explore More
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className='flex items-center justify-center flex-col mt-15 mb-10 px-4'>
+        {/* About Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className='flex items-center justify-center flex-col mt-15 mb-10 px-4'
+        >
             <h1 style={{fontFamily: "satoshi-black"}} className='text-2xl lg:text-[32px] text-black lg:text-center tracking-[0.4px]'>
               Precision, Style, and Comfort - All in One Chair
             </h1>
@@ -34,10 +50,18 @@ const LandingPage = () => {
               looking sharp and feeling confident. From classic cuts and modern fades to beard
               trims and shaves, our barbers deliver expert care with a street-smart edge.
             </p>
-        </div>
+        </motion.div>
 
-        <div style={{fontFamily: "satoshi-medium"}} className='flex items-center justify-center flex-col'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] xl:w-[75%] tracking-[0.4px] text-center text-base justify-center items-center'>
+        {/* Services Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          style={{fontFamily: "satoshi-medium"}}
+          className='flex items-center justify-center flex-col'
+        >
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] tracking-[0.4px] text-center text-base justify-center items-center'>
             <div className='mb-4'>
               <img src={grid1} alt="" className='mb-2 h-90'/>
               <h6>Haircut</h6>
@@ -60,15 +84,29 @@ const LandingPage = () => {
               <Button variant={'orig'} size={'sm'}  className="cursor-pointer">See All Services</Button>
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-65px] h-[300px] lg:h-190 xl:h-210 mt-10 lg:mt-20">
-          {/* Barbers Image lang */}
-        </div>
+        {/* Barbers Image Section */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-65px] h-[300px] lg:h-190 mt-10 lg:mt-20"
+        >
+        </motion.div>
 
-        <div className='flex flex-col items-center justify-center py-15 px-4 mb-10'>
+        {/* Social Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+          viewport={{ once: true }}
+          className='flex flex-col items-center justify-center py-15 px-4 mb-10'
+        >
           <h1
-            style={{ fontFamily: "satoshi-bold" }} className='text-2xl md:text-[32px] text-black md:text-center tracking-[0.4px]'>
+            style={{ fontFamily: "satoshi-bold" }} className='text-2xl md:text-[32px] text-black md:text-center tracking-[0.4px]'
+          >
             Stay Connected with Molave Street's Barbers
           </h1>
           <p className='mt-2 text-sm md:text-base tracking-[0.4px]' style={{fontFamily: 'satoshi-medium'}}>
@@ -101,7 +139,7 @@ const LandingPage = () => {
               <QuickMessageDialog />
             </div>  
           </div>
-        </div>
+        </motion.div>
 
     </div>
   )
