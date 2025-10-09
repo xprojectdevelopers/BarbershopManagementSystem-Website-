@@ -35,7 +35,6 @@ const Services = () => {
     serviceSectionRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
-  // Load images from Supabase album
   useEffect(() => {
     const fetchImages = async () => {
       const { data, error } = await supabase
@@ -55,79 +54,109 @@ const Services = () => {
 
   return (
     <div>
-      <div className="bg-[url('src/assets/img/Services-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-100px] h-[200px] lg:h-135 flex items-end justify-center">
+      {/* HERO SECTION */}
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-[url('src/assets/img/Services-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-100px] h-[200px] lg:h-135 flex items-end justify-center"
+      >
         <div className="text-white text-center mb-15">
           <h5 className="uppercase text-xs" style={{fontFamily: "satoshi-medium"}}>Services</h5>
           <h1 className="tracking-[0.4px] text-2xl lg:text-[32px]" style={{fontFamily: "satoshi-bold"}}>Street Style, Redefined</h1>
           <a 
             href="#service-section"
             onClick={scrollToService}
-             className='text-white border-b pb-1 text-sm lg:text-base' 
+            className='text-white border-b pb-1 text-sm lg:text-base' 
             style={{fontFamily: "satoshi-medium"}}
           >
             Scroll Down
           </a>
         </div>
-      </div>
+      </motion.div>
 
       {/* INTRO */}
-      <div className="mt-10 px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="mt-10 px-4"
+      >
         <h1 className="text-2xl lg:text-[32px] tracking-[0.4px] text-left lg:text-center" style={{fontFamily: "satoshi-bold"}}>Molave Street's Barbers Services</h1>
         <p className="text-sm lg:text-base text-left lg:text-center tracking-[0.4px] mt-2 max-w-[700px] mx-auto leading-[24px]" style={{fontFamily: "satoshi-medium"}}>
           Our story began 7 years ago as a humble corner shop with a single chair and a big dream to bring authentic, high-quality 
           grooming to the heart of the community.
         </p>
-      </div>
+      </motion.div>
 
-      <div
+      {/* SERVICES GRID */}
+      <motion.div
         ref={serviceSectionRef}
         id="service-section"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
         className="mt-10 flex items-center justify-center"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 w-[90%] lg:w-[85%] gap-6 justify-center">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.05 }}
+              viewport={{ once: true }}
               className="bg-gray-100 hover:bg-black hover:text-white transition-colors duration-300 flex items-center justify-center h-50 lg:h-50 text-2xl lg:text-[32px] cursor-pointer"
               style={{ fontFamily: "satoshi-bold" }}
             >
               {service}
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
-
+      </motion.div>
 
       {/* CAROUSEL */}
-      <Carousel
-        className="lg:w-full max-w-6xl mx-auto mt-20 mb-20 relative group"
-        plugins={[
-          Autoplay({ delay: 10000, stopOnInteraction: true })
-        ]}
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
-        <CarouselContent>
-          {images.length > 0 ? (
-            images.map((img, index) => (
-              <CarouselItem key={index} className="basis-1/1 md:basis-1/3 flex justify-center">
-                <img
-                  src={img}
-                  alt={`Album ${index + 1}`}
-                  className="w-[300px] lg:w-[400px] h-[400px] lg:h-[500px] object-cover cursor-pointer"
-                  onClick={() => setSelectedImage(img)}
-                />
-              </CarouselItem>
-            ))
-          ) : (
-            <p className="text-center w-full py-10">No images uploaded yet.</p>
-          )}
-        </CarouselContent>
+        <Carousel
+          className="lg:w-full max-w-6xl mx-auto mt-20 mb-20 relative group"
+          plugins={[
+            Autoplay({ delay: 10000, stopOnInteraction: true })
+          ]}
+        >
+          <CarouselContent>
+            {images.length > 0 ? (
+              images.map((img, index) => (
+                <CarouselItem key={index} className="basis-1/1 md:basis-1/3 flex justify-center">
+                  <motion.img
+                    src={img}
+                    alt={`Album ${index + 1}`}
+                    className="w-[300px] lg:w-[400px] h-[400px] lg:h-[500px] object-cover cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    onClick={() => setSelectedImage(img)}
+                  />
+                </CarouselItem>
+              ))
+            ) : (
+              <p className="text-center w-full py-10">No images uploaded yet.</p>
+            )}
+          </CarouselContent>
 
-        <CarouselPrevious className="opacity-0 group-hover:opacity-100 transition duration-300" />
-        <CarouselNext className="opacity-0 group-hover:opacity-100 transition duration-300" />
+          <CarouselPrevious className="opacity-0 group-hover:opacity-100 transition duration-300" />
+          <CarouselNext className="opacity-0 group-hover:opacity-100 transition duration-300" />
+          <CarouselDots />
+        </Carousel>
+      </motion.div>
 
-        <CarouselDots />
-      </Carousel>
-
+      {/* IMAGE MODAL */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div

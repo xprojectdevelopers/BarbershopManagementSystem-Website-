@@ -12,7 +12,7 @@ import QuickMessageDialog from '../components/QuickMessage'
 const LandingPage = () => {
   return (
     <div className='mb-[-25px] scroll-smooth'>
-        <div className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-[center_bottom_-60px] bg-no-repeat h-[200px] lg:h-135 flex items-end justify-center'>
+        <div className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-[center_bottom_-60px] bg-no-repeat h-[200px] lg:h-135 xl:h-150 flex items-end justify-center'>
           <div className='text-white text-center mb-15'>
             <h5 className='uppercase text-xs' style={{fontFamily: "satoshi-medium"}}>Street Style</h5>
             <h1 className='tracking-[0.4px] text-2xl lg:text-[32px]' style={{fontFamily: "satoshi-bold"}}>Welcome to Molave Street's Barbers</h1>
@@ -37,7 +37,7 @@ const LandingPage = () => {
         </div>
 
         <div style={{fontFamily: "satoshi-medium"}} className='flex items-center justify-center flex-col'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] tracking-[0.4px] text-center text-base justify-center items-center'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] xl:w-[75%] tracking-[0.4px] text-center text-base justify-center items-center'>
             <div className='mb-4'>
               <img src={grid1} alt="" className='mb-2 h-90'/>
               <h6>Haircut</h6>
@@ -62,7 +62,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-65px] h-[300px] lg:h-190 mt-10 lg:mt-20">
+        <div className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-65px] h-[300px] lg:h-190 xl:h-210 mt-10 lg:mt-20">
           {/* Barbers Image lang */}
         </div>
 
