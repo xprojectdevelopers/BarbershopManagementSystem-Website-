@@ -37,7 +37,7 @@ const Footer = () => {
           </Link>
           |
           <Link 
-            to='/' 
+            to='/terms' 
             className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1'
             style={{fontFamily: 'satoshi-bold'}}            
           >
@@ -45,7 +45,7 @@ const Footer = () => {
           </Link>
           |
           <Link 
-            to='/' 
+            to='/privacy' 
             className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1'
             style={{fontFamily: 'satoshi-bold'}}            
           >

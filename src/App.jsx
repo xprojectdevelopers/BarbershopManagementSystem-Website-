@@ -5,6 +5,8 @@ import LandingPage from './pages/LandingPage'
 import About from './pages/About'
 import Services from './pages/Services'
 import FaqAccordion from './pages/FAQ'
+import TermsCondition from './pages/TermsCondition'
+import PrivaryPolicy from './pages/PrivacyPolicy'
 import Footer from './components/Footer'
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/FaqPage" element={<FaqAccordion/>} />
+        <Route path="/terms" element={<TermsCondition />} />
+        <Route path="/privacy" element={<PrivaryPolicy />} />
       </Routes>
       <Footer />
     </Router>

@@ -4,9 +4,9 @@ import grid1 from '../assets/img/Haircut.png'
 import grid2 from '../assets/img/HWash.png'
 import grid3 from '../assets/img/HTowel.png'
 import grid4 from '../assets/img/Shave.png'
-import M1 from '../assets/img/1.png'
-import M2 from '../assets/img/2.png'
-import M3 from '../assets/img/3.png'
+import M1 from '../assets/img/Pic1.jpg'
+import M2 from '../assets/img/Pic2.jpg'
+import M3 from '../assets/img/Pic3.jpg'
 import QuickMessageDialog from '../components/QuickMessage'
 import { motion } from "framer-motion"
 
@@ -20,7 +20,7 @@ const LandingPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-[center_bottom_-60px] bg-no-repeat h-[200px] lg:h-135 flex items-end justify-center'
+          className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-[center_bottom_-60px] bg-no-repeat h-[200px] lg:h-135 xl:h-150 flex items-end justify-center'
         >
           <div className='text-white text-center mb-15'>
             <h5 className='uppercase text-xs' style={{fontFamily: "satoshi-medium"}}>Street Style</h5>
@@ -61,7 +61,7 @@ const LandingPage = () => {
           style={{fontFamily: "satoshi-medium"}}
           className='flex items-center justify-center flex-col'
         >
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] tracking-[0.4px] text-center text-base justify-center items-center'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] xl:w-[75%] tracking-[0.4px] text-center text-base justify-center items-center'>
             <div className='mb-4'>
               <img src={grid1} alt="" className='mb-2 h-90'/>
               <h6>Haircut</h6>
@@ -92,7 +92,7 @@ const LandingPage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-65px] h-[300px] lg:h-190 mt-10 lg:mt-20"
+          className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-65px] h-[300px] lg:h-190 xl:h-215 mt-10 lg:mt-20"
         >
         </motion.div>
 

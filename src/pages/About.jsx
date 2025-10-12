@@ -42,12 +42,12 @@ function About() {
 
     window.onYouTubeIframeAPIReady = () => {
       window.player = new window.YT.Player("youtube-player", {
-        videoId: "pmxmI6mix7o",
+        videoId: "LcmpIJkTlTo",
         playerVars: {
           autoplay: 1,
           mute: 1,
           loop: 1,
-          playlist: "pmxmI6mix7o",
+          playlist: "LcmpIJkTlTo",
           controls: 0,
           modestbranding: 1,
           rel: 0,
