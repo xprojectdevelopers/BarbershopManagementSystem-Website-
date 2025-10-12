@@ -135,7 +135,7 @@ const LandingPage = () => {
                 <img src={M3} alt="" className='h-120'/>
               </div>
               <p className='mb-3'>Tell Us What You Think</p>
-              <a href="#" className='underline'>Review via Google Form</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZe_Gh7zizByHCArr5UxzM76bnr6508XSvr8epvkaRnHZuTQ/viewform" className='underline'>Review via Google Form</a>
               <QuickMessageDialog />
             </div>  
           </div>
