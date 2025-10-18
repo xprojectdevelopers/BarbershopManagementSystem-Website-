@@ -20,7 +20,7 @@ const LandingPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-[center_bottom_-60px] bg-no-repeat h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center'
+          className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-position-[center_top_calc(65%-1rem)] bg-no-repeat h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center'
         >
           <div className='text-white text-center mb-15'>
             <h5 className='uppercase text-xs' style={{fontFamily: "satoshi-medium"}}>Street Style</h5>
@@ -92,7 +92,7 @@ const LandingPage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-65px] h-[300px] lg:h-195 mt-10 lg:mt-20"
+          className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-position-[center_top_calc(45%-1rem)] h-[300px] lg:h-195 mt-10 lg:mt-20"
         >
         </motion.div>
 

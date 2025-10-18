@@ -60,7 +60,7 @@ const Services = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-[url('/img/Services-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-100px] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center"
+        className="bg-[url('/img/Services-bg.jpg')] bg-cover bg-no-repeat lg:bg-position-[center_top_calc(50%-1rem)] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center"
       >
         <div className="text-white text-center mb-15">
           <h5 className="uppercase text-xs" style={{fontFamily: "satoshi-medium"}}>Services</h5>
