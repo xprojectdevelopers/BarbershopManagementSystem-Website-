@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "oswald";
-  src: url("src/assets/fonts/Oswald-SemiBold.ttf") format("truetype");
+  src: url("/src/assets/fonts/Oswald-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }

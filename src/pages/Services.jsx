@@ -12,6 +12,9 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X } from "phosphor-react"
 import { supabase } from "@/lib/supabaseClient"
 
+// ✅ Import your background image properly
+import servicesBg from "@/assets/img/Services-bg.jpg"
+
 const services = [
   "Haircut",
   "Hair Wash",
@@ -23,7 +26,7 @@ const services = [
   "Braids",
   "Rebond",
   "Perm",
-];
+]
 
 const Services = () => {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -45,7 +48,7 @@ const Services = () => {
       if (error) {
         console.error("❌ Error fetching images:", error.message)
       } else {
-        setImages(data.map(item => item.image_url))
+        setImages(data.map((item) => item.image_url))
       }
     }
 
@@ -60,16 +63,32 @@ const Services = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-[url('src/assets/img/Services-bg.jpg')] bg-cover bg-no-repeat lg:bg-[center_bottom_-100px] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center"
+        style={{
+          backgroundImage: `url(${servicesBg})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center bottom -100px",
+        }}
+        className="h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center"
       >
         <div className="text-white text-center mb-15">
-          <h5 className="uppercase text-xs" style={{fontFamily: "satoshi-medium"}}>Services</h5>
-          <h1 className="tracking-[0.4px] text-2xl lg:text-[32px]" style={{fontFamily: "satoshi-bold"}}>Street Style, Redefined</h1>
-          <a 
+          <h5
+            className="uppercase text-xs"
+            style={{ fontFamily: "satoshi-medium" }}
+          >
+            Services
+          </h5>
+          <h1
+            className="tracking-[0.4px] text-2xl lg:text-[32px]"
+            style={{ fontFamily: "satoshi-bold" }}
+          >
+            Street Style, Redefined
+          </h1>
+          <a
             href="#service-section"
             onClick={scrollToService}
-            className='text-white border-b pb-1 text-sm lg:text-base' 
-            style={{fontFamily: "satoshi-medium"}}
+            className="text-white border-b pb-1 text-sm lg:text-base"
+            style={{ fontFamily: "satoshi-medium" }}
           >
             Scroll Down
           </a>
@@ -84,10 +103,19 @@ const Services = () => {
         viewport={{ once: true }}
         className="mt-10 px-4"
       >
-        <h1 className="text-2xl lg:text-[32px] tracking-[0.4px] text-left lg:text-center" style={{fontFamily: "satoshi-bold"}}>Molave Street's Barbers Services</h1>
-        <p className="text-sm lg:text-base text-left lg:text-center tracking-[0.4px] mt-2 max-w-[700px] mx-auto leading-[24px]" style={{fontFamily: "satoshi-medium"}}>
-          Our story began 7 years ago as a humble corner shop with a single chair and a big dream to bring authentic, high-quality 
-          grooming to the heart of the community.
+        <h1
+          className="text-2xl lg:text-[32px] tracking-[0.4px] text-left lg:text-center"
+          style={{ fontFamily: "satoshi-bold" }}
+        >
+          Molave Street's Barbers Services
+        </h1>
+        <p
+          className="text-sm lg:text-base text-left lg:text-center tracking-[0.4px] mt-2 max-w-[700px] mx-auto leading-[24px]"
+          style={{ fontFamily: "satoshi-medium" }}
+        >
+          Our story began 7 years ago as a humble corner shop with a single
+          chair and a big dream to bring authentic, high-quality grooming to the
+          heart of the community.
         </p>
       </motion.div>
 
@@ -127,14 +155,15 @@ const Services = () => {
       >
         <Carousel
           className="lg:w-full max-w-6xl mx-auto mt-20 mb-20 relative group"
-          plugins={[
-            Autoplay({ delay: 10000, stopOnInteraction: true })
-          ]}
+          plugins={[Autoplay({ delay: 10000, stopOnInteraction: true })]}
         >
           <CarouselContent>
             {images.length > 0 ? (
               images.map((img, index) => (
-                <CarouselItem key={index} className="basis-1/1 md:basis-1/3 flex justify-center">
+                <CarouselItem
+                  key={index}
+                  className="basis-1/1 md:basis-1/3 flex justify-center"
+                >
                   <motion.img
                     src={img}
                     alt={`Album ${index + 1}`}
@@ -146,7 +175,9 @@ const Services = () => {
                 </CarouselItem>
               ))
             ) : (
-              <p className="text-center w-full py-10">No images uploaded yet.</p>
+              <p className="text-center w-full py-10">
+                No images uploaded yet.
+              </p>
             )}
           </CarouselContent>
 

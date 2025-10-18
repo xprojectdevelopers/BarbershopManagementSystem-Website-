@@ -11,4 +11,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    assetsInclude: ['**/*.ttf', '**/*.woff', '**/*.woff2', '**/*.png', '**/*.jpg', '**/*.jpeg'],
+  },
+
 })
