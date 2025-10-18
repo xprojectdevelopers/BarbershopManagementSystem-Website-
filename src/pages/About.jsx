@@ -243,7 +243,7 @@ function About() {
       {/* FEEDBACK HEADER */}
         <div
             ref={feedbackRef} 
-            className='bg-[url("/src/assets/img/CFeedback-bg.jpg")] bg-cover bg-center h-[300px] lg:h-194 mb-10 lg:mb-20 flex items-center justify-center overflow-hidden'
+            className='bg-[url("/img/CFeedback-bg.jpg")] bg-cover bg-center h-[300px] lg:h-194 mb-10 lg:mb-20 flex items-center justify-center overflow-hidden'
             >
             <motion.div
                 className="text-white text-center"
