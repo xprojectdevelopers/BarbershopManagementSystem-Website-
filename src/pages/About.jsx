@@ -94,7 +94,7 @@ function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-[url('/src/assets/img/AboutUs-bg.jpg')] bg-cover bg-center h-[200px] lg:h-135 xl:h-150 flex items-end justify-center"
+        className="bg-[url('/src/assets/img/AboutUs-bg.jpg')] bg-cover bg-center h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center"
       >
         <div className="text-white text-center mb-15">
           <h5 className="uppercase text-xs" style={{ fontFamily: "satoshi-medium" }}>About Us</h5>
@@ -116,7 +116,7 @@ function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="mt-10 lg:mt-30 mb-10 lg:mb-30 px-4"
+        className="mt-10 lg:mt-20 mb-10 lg:mb-20 px-4"
       >
         <h1 className="text-2xl lg:text-[32px] tracking-[0.4px] text-left lg:text-center" style={{ fontFamily: "satoshi-bold" }}>Molave Street's Barbers</h1>
         <p className="text-sm lg:text-base text-left lg:text-center tracking-[0.4px] mt-2 max-w-[700px] mx-auto leading-[24px]" style={{ fontFamily: "satoshi-medium" }}>
@@ -134,7 +134,7 @@ function About() {
         viewport={{ once: true }}
         className="flex items-center justify-center mb-20"
       >
-        <div className="w-full lg:w-11/12 h-[300px] lg:h-[550px] xl:h-[700px] relative overflow-hidden shadow-lg">
+        <div className="w-full lg:w-10/12 h-[300px] lg:h-[560px] relative overflow-hidden shadow-lg">
           <div id="youtube-player" className="w-full h-full"></div>
 
           {/* Controls */}
@@ -179,7 +179,7 @@ function About() {
       {/* BARBERS SECTION */}
       <div
         ref={barbersRef}
-        className='bg-[url("/src/assets/img/LandingA-bg.jpg")] bg-cover bg-center h-[300px] lg:h-193 xl:h-215 mb-20 flex items-center justify-center overflow-hidden'
+        className='bg-[url("/src/assets/img/LandingA-bg.jpg")] bg-cover bg-center h-[300px] lg:h-195 mb-20 flex items-center justify-center overflow-hidden'
         >
             <motion.div
                 className="text-white text-center"
@@ -215,7 +215,7 @@ function About() {
         style={{ fontFamily: "satoshi-medium" }}
         className="flex items-center justify-center flex-col mb-10 lg:mb-20"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-[90%] xl:w-[85%] tracking-[0.4px] text-center text-sm lg:text-base">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-[90%] lg:w-[85%] tracking-[0.4px] text-center text-sm lg:text-base">
           {barbers.length > 0 ? (
             barbers.map((barber) => (
               <motion.div
@@ -243,7 +243,7 @@ function About() {
       {/* FEEDBACK HEADER */}
         <div
             ref={feedbackRef} 
-            className='bg-[url("src/assets/img/CFeedback-bg.jpg")] bg-cover bg-center h-[300px] lg:h-192 xl:h-215 mb-10 lg:mb-20 flex items-center justify-center overflow-hidden'
+            className='bg-[url("src/assets/img/CFeedback-bg.jpg")] bg-cover bg-center h-[300px] lg:h-194 mb-10 lg:mb-20 flex items-center justify-center overflow-hidden'
             >
             <motion.div
                 className="text-white text-center"

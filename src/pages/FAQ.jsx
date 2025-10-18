@@ -7,7 +7,7 @@ import {
 
 const FaqPage = () => {
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center py-16 px-4 mt-[-90px]">
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center py-16 px-4 mt-[-70px]">
       <div className="max-w-3xl w-full">
         <h1 className="text-3xl md:text-4xl text-center mb-4" style={{fontFamily: 'satoshi-bold'}}>Frequently Asked Questions</h1>
         <p className="text-sm md:text-base text-center mb-12" style={{fontFamily: 'satoshi-medium'}}>Find answers to your questions about our services and policies below.</p>
