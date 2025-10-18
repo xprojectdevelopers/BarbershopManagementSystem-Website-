@@ -63,19 +63,19 @@ const LandingPage = () => {
         >
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] tracking-[0.4px] text-center text-base justify-center items-center'>
             <div className='mb-4'>
-              <img src={grid1} alt="" className='mb-2 h-90'/>
+              <img src={grid1} alt="Haircut" className='mb-2 h-90'/>
               <h6>Haircut</h6>
             </div>
             <div className='mb-4'>
-              <img src={grid2} alt="" className='mb-2 h-90'/>
+              <img src={grid2} alt="Hair Wash" className='mb-2 h-90'/>
               <h6>Hair Wash</h6>
             </div>
             <div className='mb-4'>
-              <img src={grid3} alt="" className='mb-2 h-90'/>
+              <img src={grid3} alt="Hot Towel" className='mb-2 h-90'/>
               <h6>Hot Towel</h6>
             </div>
             <div className='mb-4'>
-              <img src={grid4} alt="" className='mb-2 h-90'/>
+              <img src={grid4} alt="Shave" className='mb-2 h-90'/>
               <h6>Shave</h6>
             </div>
           </div>
@@ -116,7 +116,7 @@ const LandingPage = () => {
           <div className='flex flex-wrap justify-center gap-4 mt-8 lg:mt-10 tracking-[0.4px]' style={{fontFamily: 'satoshi-medium'}}>
             <div className='text-center text-sm lg:text-base flex flex-col gap-2'>
               <div className='lg:mb-4'>
-                <img src={M1} alt="" className='h-120'/>
+                <img src={M1} alt="Connect With Us" className='h-120'/>
               </div>
               <p className='mb-3'>Connect With Us Online</p>
               <a href="https://www.facebook.com/MolaveSB" className='underline'>Molave Street's Barbers (Facebook)</a>
@@ -125,14 +125,14 @@ const LandingPage = () => {
             </div>
             <div className='text-center text-sm lg:text-base flex flex-col gap-2 mt-4 lg:mt-0'>
               <div className='lg:mb-4'>
-                <img src={M2} alt="" className='h-120'/>
+                <img src={M2} alt="Save Your Spot" className='h-120'/>
               </div>
               <p className='mb-3'>Let's Save Your Spot</p>
               <a href="#" className='underline'>App Name (Get App)</a>
             </div>
             <div className='text-center text-sm lg:text-base flex flex-col gap-2 mt-4 lg:mt-0'>
               <div className='lg:mb-4'>
-                <img src={M3} alt="" className='h-120'/>
+                <img src={M3} alt="Tell Us" className='h-120'/>
               </div>
               <p className='mb-3'>Tell Us What You Think</p>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZe_Gh7zizByHCArr5UxzM76bnr6508XSvr8epvkaRnHZuTQ/viewform" className='underline'>Review via Google Form</a>
