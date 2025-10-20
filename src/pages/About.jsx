@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react"
-import { Helmet } from 'react-helmet-async'
 import { Play, Pause, SpeakerSimpleHigh, SpeakerSimpleSlash } from 'phosphor-react'
 import TestimonialCard from "../components/TestimonialCard"
 import { supabase } from "@/lib/supabaseClient"
@@ -18,6 +17,15 @@ function About() {
     const feedbackRef = useRef(null)
     const feedbackInView = useInView(feedbackRef, { once: true, margin: "-100px" })
 
+  useEffect(() => {
+    document.title = "About Us | Molave Street Barbers";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", "Learn about Molave Barbershop’s history, passion, and commitment to exceptional grooming services.");
+    document
+      .querySelector('meta[name="keywords"]')
+      ?.setAttribute("content", "about Molave Barbershop, barber history, local business");
+  }, []);
 
   useEffect(() => {
     const fetchBarbers = async () => {
@@ -89,11 +97,6 @@ function About() {
 
   return (
     <div>
-      <Helmet>
-        <title>About | Molave Street Barbers</title>
-        <meta name="description" content="Learn more about Molave Street's Barbers — where precision meets style and comfort." />
-        <meta name="keywords" content="Barbershop, Haircut, Molave, Grooming, Men's style" />
-      </Helmet>
 
       {/* HERO */}
       <motion.div

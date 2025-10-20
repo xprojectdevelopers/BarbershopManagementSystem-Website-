@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react"
-import { Helmet } from 'react-helmet-async'
 import {
   Carousel,
   CarouselContent,
@@ -53,14 +52,20 @@ const Services = () => {
     fetchImages()
   }, [])
 
+  useEffect(() => {
+    document.title = "Services | Molave Street Barbers";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", "Discover our full range of grooming services — from precision haircuts to premium beard care and styling.");
+    document
+      .querySelector('meta[name="keywords"]')
+      ?.setAttribute("content", "barbershop services, haircut, beard trim, grooming, Molave");
+  }, []);
+
+
   return (
     <div>
-      <Helmet>
-        <title>Services | Molave Street Barbers</title>
-        <meta name="description" content="Discover Molave Barbershop’s professional haircut, beard trim, and grooming services crafted to keep you looking sharp and confident."/>
-        <meta name="keywords" content="molave barbershop services, haircut, grooming, beard trim, men's hairstyle, professional barber"/>
-      </Helmet>
-
+      
       {/* HERO SECTION */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}

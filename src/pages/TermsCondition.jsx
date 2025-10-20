@@ -1,16 +1,20 @@
-import { Helmet } from "react-helmet-async";
 import React from 'react'
+import { useEffect } from "react";
 
 
 const TermsCondition = () => {
+    useEffect(() => {
+    document.title = "Terms and Conditions | Molave Street Barbers";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", "Read Molave Barbershop’s terms and conditions regarding services, policies, and client responsibilities.");
+    document
+      .querySelector('meta[name="keywords"]')
+      ?.setAttribute("content", "terms, conditions, barbershop policy, Molave");
+  }, []);
+
   return (
     <div>
-        <Helmet>
-            <title>Terms & Conditions | Molave Street Barbers</title>
-            <meta name="description" content="Read the terms and conditions for using Molave Barbershop’s website and services, including booking, cancellations, and user responsibilities."/>
-            <meta name="keywords" content="molave barbershop terms, service agreement, booking policy, haircut terms, customer rules"/>
-        </Helmet>
-
         <div className='mx-auto max-w-[850px] min-h-screen px-10 py-15'>
             <div className='text-3xl lg:text-4xl text-center mb-5'
                 style={{ fontFamily: 'satoshi-bold' }}>

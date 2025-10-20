@@ -1,15 +1,19 @@
-import { Helmet } from "react-helmet-async";
 import React from 'react'
+import { useEffect } from "react";
 
 const PrivacyPolicy = () => {
+    useEffect(() => {
+    document.title = "Privacy Policy | Molave Street Barbers";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", "Learn how Molave Barbershop collects, uses, and protects your personal information.");
+    document
+      .querySelector('meta[name="keywords"]')
+      ?.setAttribute("content", "privacy policy, data protection, barbershop privacy, Molave");
+  }, []);
+
   return (
     <div>
-        <Helmet>
-            <title>Privacy Policy | Molave Street Barbers</title>
-            <meta name="description" content="Learn how Molave Barbershop collects, uses, and protects your personal information when you visit or book online."/>
-            <meta name="keywords" content="molave barbershop privacy, data protection, customer information, privacy policy, personal data"/>
-        </Helmet>
-
         <div className='mx-auto max-w-[850px] min-h-screen px-10 py-15'>
             <div className='text-3xl lg:text-4xl text-center mb-5' style={{fontFamily: 'satoshi-bold'}}>
                 <h1>Privacy Policy</h1>
