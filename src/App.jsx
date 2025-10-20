@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import LandingPage from './pages/LandingPage'
@@ -12,6 +13,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <Router>
+      <HelmetProvider>
       <ScrollToTop />
       <Header />
       <Routes>
@@ -23,6 +25,7 @@ function App() {
         <Route path="/privacy" element={<PrivaryPolicy />} />
       </Routes>
       <Footer />
+      </HelmetProvider>
     </Router>
   )
 }

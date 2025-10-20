@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import { Helmet } from 'react-helmet-async'
 import { Play, Pause, SpeakerSimpleHigh, SpeakerSimpleSlash } from 'phosphor-react'
 import TestimonialCard from "../components/TestimonialCard"
 import { supabase } from "@/lib/supabaseClient"
@@ -88,6 +89,12 @@ function About() {
 
   return (
     <div>
+      <Helmet>
+        <title>About | Molave Street Barbers</title>
+        <meta name="description" content="Learn more about Molave Street's Barbers — where precision meets style and comfort." />
+        <meta name="keywords" content="Barbershop, Haircut, Molave, Grooming, Men's style" />
+      </Helmet>
+
       {/* HERO */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
@@ -229,6 +236,7 @@ function About() {
                 <img
                   src={barber.image_url}
                   alt={barber.name}
+                  loading="lazy"
                   className="mb-2 w-[300px] h-[400px] object-cover shadow-md"
                 />
                 <h6>{barber.name}</h6>

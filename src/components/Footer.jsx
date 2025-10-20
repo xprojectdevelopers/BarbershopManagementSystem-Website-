@@ -30,7 +30,7 @@ const Footer = () => {
           <span>Copyright 2025 Molave Street's Barbers |</span>
           <Link 
             to='/FaqPage' 
-            className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1'
+            className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1 hover:underline'
             style={{fontFamily: 'satoshi-bold'}}            
           >
             FAQs
@@ -38,7 +38,7 @@ const Footer = () => {
           |
           <Link 
             to='/terms' 
-            className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1'
+            className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1 hover:underline'
             style={{fontFamily: 'satoshi-bold'}}            
           >
             Terms & Conditions
@@ -46,7 +46,7 @@ const Footer = () => {
           |
           <Link 
             to='/privacy' 
-            className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1'
+            className='inline-block text-xs sm:text-sm lg:text-base ml-1 mr-1 hover:underline'
             style={{fontFamily: 'satoshi-bold'}}            
           >
             Privacy Policy

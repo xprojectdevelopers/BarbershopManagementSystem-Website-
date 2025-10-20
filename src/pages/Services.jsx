@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
+import { Helmet } from 'react-helmet-async'
 import {
   Carousel,
   CarouselContent,
@@ -54,6 +55,12 @@ const Services = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Services | Molave Street Barbers</title>
+        <meta name="description" content="Discover Molave Barbershop’s professional haircut, beard trim, and grooming services crafted to keep you looking sharp and confident."/>
+        <meta name="keywords" content="molave barbershop services, haircut, grooming, beard trim, men's hairstyle, professional barber"/>
+      </Helmet>
+
       {/* HERO SECTION */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
