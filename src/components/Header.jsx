@@ -55,7 +55,7 @@ const Header = () => {
           {/* Book Now Dialog */}
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="text-sm lg:text-base px-4 sm:px-6 cursor-pointer">Book Now</Button>
+              <Button className="text-sm lg:text-base px-4 sm:px-6 mr-3 md:mr-0 cursor-pointer">Book Now</Button>
             </DialogTrigger>
             <DialogContent className="w-[90%] max-w-[500px] p-6 lg:p-8">
               <DialogHeader>
