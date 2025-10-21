@@ -292,34 +292,34 @@ function About() {
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
           {[
             {
-              name: "John Doe",
-              position: "Client, Local Business",
-              content: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."`,
+              name: "John David Delacruz",
+              position: "Molave Street Legend",
+              content: `"Molave Street Barbers always gets it right. The barbers here really know men's styles and give clean, sharp cuts every time. The atmosphere is chill, the barbers are friendly, and you walk out feeling fresh and confident. Best barbershop in community!"`,
             },
             {
-              name: "Name Surname",
-              position: "Position, Company name",
-              content: `"I've never felt more at home in a barbershop. The team at Molave Street’s Barbers truly knows how to make you look and feel your best! I've never felt more at home in a barbershop. The team at Molave Street’s Barbers truly knows how to make you look and feel your best!"`,
+              name: "Nick Reyes",
+              position: "Molave Street Legend",
+              content: `"The fade was perfect, the service was quick, and the vibe was on point. You can tell these barbers know their craft. Definitely my go to barbershop!"`,
             },
             {
-              name: "Name Surname",
-              position: "Position, Company name",
-              content: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."`,
+              name: "Christopher Gonzales",
+              position: "Molave Street Legend",
+              content: `"I've been getting my cuts at Molave Street Barbers for over a year now, and they never miss. Every barber here is skilled, consistent, and pays attention to the smallest details. I always leave with a clean, sharp look that lasts. The hot towel treatment is the perfect finish and feels like a quick spa session made for men."`,
             },
             {
-              name: "Name Surname",
-              position: "Position, Company name",
-              content: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."`,
+              name: "John Ken Mendoza",
+              position: "Molave Street Legend",
+              content: `"Molave Street Barbers is the real deal. The prices are affordable, but the quality feels premium. My barber helped me pick a style that fits my look, and I walked out feeling more confident than ever. The whole crew is friendly and really knows what they're doing."`,
             },
             {
-              name: "Name Surname",
-              position: "Position, Company name",
-              content: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."`,
+              name: "Ramil Bautista",
+              position: "Molave Street Legend",
+              content: `"Tried their home service and it was solid! The barber came fully equipped, professional, and delivered the same quality cut as in the shop. Super convenient if you're on a tight schedule but still want that clean, barbershop finish."`,
             },
             {
-              name: "Name Surname",
-              position: "Position, Company name",
-              content: `"I've never felt more at home in a barbershop. The team at Molave Street’s Barbers truly knows how to make you look and feel your best! I've never felt more at home in a barbershop. The team at Molave Street’s Barbers truly knows how to make you look and feel your best!"`,
+              name: "Leo Castro",
+              position: "Molave Street Legend",
+              content: `"Affordable, stylish, and legit barbers who know men's grooming. They helped me choose a haircut that fits my face and personality. I left the shop feeling confident and fresh. This place really hits different!"`,
             },
           ].map((testimonial, index) => (
             <TestimonialCard
