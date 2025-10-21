@@ -139,7 +139,7 @@ const LandingPage = () => {
                 <img src={M2} alt="Save Your Spot" loading='lazy' className='h-120'/>
               </div>
               <p className='mb-3'>Let's Save Your Spot</p>
-              <a href="#" className='underline'>MLV St. (Get App)</a>
+              <a href="#" className='underline'>MLV ST. (Get App)</a>
             </div>
             <div className='text-center text-sm lg:text-base flex flex-col gap-2 mt-4 lg:mt-0'>
               <div className='lg:mb-4'>

@@ -27,44 +27,37 @@ const FaqPage = () => {
         <Accordion type="single" collapsible className="w-full space-y-4">
           
           <AccordionItem value="item-1">
-            <AccordionTrigger>How to book?</AccordionTrigger>
+            <AccordionTrigger>How can I book an appointment?</AccordionTrigger>
             <AccordionContent>
-              Booking an appointment is easy! You can use our online booking system or call us directly. 
-              We recommend booking in advance to secure your preferred time.
+              You can book an appointment through our online booking system or by calling us directly.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-2">
-            <AccordionTrigger>Rescheduling policy?</AccordionTrigger>
+            <AccordionTrigger>Do you accommodate walk-in clients?</AccordionTrigger>
             <AccordionContent>
-              If you need to reschedule, please notify us at least 24 hours in advance. 
-              This allows us to accommodate other clients. Late cancellations may incur a fee.
+              Yes, we welcome walk-ins! However, to ensure you get served promptly, we recommend checking our peak hours. Walk-in availability may vary.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-3">
-            <AccordionTrigger>Walk-in acceptance?</AccordionTrigger>
+            <AccordionTrigger>What are the accepted payment methods?</AccordionTrigger>
             <AccordionContent>
-              Yes, we welcome walk-ins! However, to ensure you get served promptly, 
-              we recommend checking our peak hours. Walk-in availability may vary.
+              We accept various payment methods, including cash and e-wallet options. You can pay conveniently through GCash or Maya.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-4">
-            <AccordionTrigger>Payment methods accepted?</AccordionTrigger>
+            <AccordionTrigger>Do you offer home service?</AccordionTrigger>
             <AccordionContent>
-              We accept various payment methods, including cash, credit, and debit cards. 
-              For your convenience, we also offer mobile payment options. 
-              Please inquire at the front desk for details.
+              Yes, we do! You can book a home service by contacting us directly, sending us an email, or visiting our official Facebook page for more details.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-5">
-            <AccordionTrigger>Service guarantee?</AccordionTrigger>
+            <AccordionTrigger>Do you sell hair products?</AccordionTrigger>
             <AccordionContent>
-              We strive for excellence in every service we provide. 
-              If you're not satisfied with your haircut, please let us know within 7 days. 
-              We will work with you to make it right.
+              Yes! We offer a variety of hair products over the counter, including pomades, basic hair care tools, sprays, and more. Just visit our shop to check out full selection. 
             </AccordionContent>
           </AccordionItem>
         </Accordion>
