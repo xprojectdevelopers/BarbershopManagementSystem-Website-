@@ -31,7 +31,7 @@ const LandingPage = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-position-[center_top_calc(65%-1rem)] bg-no-repeat h-[200px] sm:h-[300px] md:h-[400px] lg:h-[640px] flex items-end justify-center'
+          className='bg-[url("/src/assets/img/Hero-bg.jpg")] bg-cover bg-center lg:bg-position-[center_top_calc(65%-1rem)] bg-no-repeat h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] xl:h-[640px] flex items-end justify-center'
         >
           <div className='text-white text-center mb-15'>
             <h5 className='uppercase text-xs' style={{fontFamily: "satoshi-medium"}}>Street Style</h5>
