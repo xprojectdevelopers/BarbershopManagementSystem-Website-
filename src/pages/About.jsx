@@ -104,7 +104,7 @@ function About() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-[url('/src/assets/img/AboutUs-bg.jpg')] bg-cover bg-center h-[200px] sm:h-[300px] md:h-[400px] lg:h-[540px] flex items-end justify-center"
+        className="bg-[url('/src/assets/img/AboutUs-bg.jpg')] bg-cover bg-center h-[200px] sm:h-[300px] md:h-[400px] lg:h-[685px] flex items-end justify-center"
       >
         <div className="text-white text-center mb-15">
           <h5 className="uppercase text-xs" style={{ fontFamily: "satoshi-medium" }}>About Us</h5>

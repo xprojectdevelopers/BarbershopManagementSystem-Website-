@@ -35,7 +35,7 @@ export default function ContactSheet() {
         </SheetHeader>
 
         <div
-          className="flex flex-col gap-4 pl-3 tracking-[0.4px] text-sm lg:text-base"
+          className="flex flex-col gap-4 tracking-[0.4px] pl-4 text-sm lg:text-base"
           style={{ fontFamily: "satoshi-bold" }}
         >
           <div className="flex items-center gap-2">
@@ -48,9 +48,9 @@ export default function ContactSheet() {
           </div>
         </div>
 
-        <hr className="my-4 mx-3 lg:mx-0 border-black" />
+        <hr className="my-4 mx-3 border-black" />
 
-        <div className="flex flex-col gap-2 px-4 md:px-0">
+        <div className="flex flex-col gap-2 px-4 ">
           <Link
           to="/FaqPage"
           className="text-sm lg:text-base tracking-[0.4px] underline"
@@ -73,7 +73,7 @@ export default function ContactSheet() {
         />
         </div>
 
-        <div className="mt-25">
+        <div className="mt-25 lg:mt-43">
           <h6
             className="text-xl lg:text-2xl text-center uppercase mb-4"
             style={{ fontFamily: "oswald" }}
