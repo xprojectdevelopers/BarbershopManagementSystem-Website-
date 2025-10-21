@@ -40,11 +40,11 @@ export default function ContactSheet() {
         >
           <div className="flex items-center gap-2">
             <At size={20} weight="bold" />
-            <span>gmail.com</span>
+            <span>molavestreetsbarbers@gmail.com</span>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={20} weight="bold" />
-            <span>0999999999</span>
+            <span>09496209911</span>
           </div>
         </div>
 
