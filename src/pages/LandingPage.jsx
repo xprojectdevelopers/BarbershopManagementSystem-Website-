@@ -72,7 +72,7 @@ const LandingPage = () => {
           style={{fontFamily: "satoshi-medium"}}
           className='flex items-center justify-center flex-col'
         >
-          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[85%] tracking-[0.4px] text-center text-base justify-center items-center'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:w-[83%] 2xl:w-[70%] tracking-[0.4px] text-center text-base justify-center items-center'>
             <div className='mb-4'>
               <img src={grid1} alt="Haircut" loading='lazy' className='mb-2 h-90'/>
               <h6>Haircut</h6>
@@ -103,7 +103,7 @@ const LandingPage = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-position-[center_top_calc(45%-1rem)] h-[300px] lg:h-195 mt-10 lg:mt-20"
+          className="bg-[url('/src/assets/img/Landing-bg.jpg')] bg-cover bg-no-repeat lg:bg-position-[center_top_calc(45%-1rem)] h-[300px] lg:h-195 2xl:h-210 mt-10 lg:mt-20"
         >
         </motion.div>
 

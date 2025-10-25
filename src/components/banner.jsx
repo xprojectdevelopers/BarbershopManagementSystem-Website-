@@ -77,7 +77,7 @@ const Banner = () => {
   const currentMessage = messages[currentIndex];
 
   return (
-    <div className="w-full bg-white border-b border-gray-400 text-center text-sm md:text-base py-2 px-4 flex items-center justify-center relative">
+    <div className="w-full bg-white border-b border-gray-400 text-center text-sm md:text-base py-2 px-10 flex items-center justify-center relative">
       <span
         key={currentIndex}
         className={`transition-opacity duration-500 ease-in-out ${

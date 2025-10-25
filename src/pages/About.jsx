@@ -144,7 +144,7 @@ function About() {
         viewport={{ once: true }}
         className="flex items-center justify-center mb-20"
       >
-        <div className="w-full lg:w-10/12 h-[300px] lg:h-[560px] relative overflow-hidden shadow-lg">
+        <div className="w-full lg:w-10/12 2xl:w-9/12 h-[300px] lg:h-[560px] relative overflow-hidden shadow-lg">
           <div id="youtube-player" className="w-full h-full"></div>
 
           {/* Controls */}
@@ -189,7 +189,7 @@ function About() {
       {/* BARBERS SECTION */}
       <div
         ref={barbersRef}
-        className='bg-[url("/src/assets/img/LandingA-bg.jpg")] bg-cover bg-center h-[300px] lg:h-195 mb-20 flex items-center justify-center overflow-hidden'
+        className='bg-[url("/src/assets/img/LandingA-bg.jpg")] bg-cover bg-center h-[300px] lg:h-195 2xl:h-215 mb-20 flex items-center justify-center overflow-hidden'
         >
             <motion.div
                 className="text-white text-center"
