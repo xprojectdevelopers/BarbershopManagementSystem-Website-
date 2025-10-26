@@ -73,7 +73,7 @@ export default function ContactSheet() {
         />
         </div>
 
-        <div className="mt-25 lg:mt-43">
+        <div className="mt-20">
           <h6
             className="text-xl lg:text-2xl text-center uppercase mb-4"
             style={{ fontFamily: "oswald" }}
