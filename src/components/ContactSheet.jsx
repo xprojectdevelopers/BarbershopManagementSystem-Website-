@@ -23,7 +23,7 @@ export default function ContactSheet() {
       {/* Ito yung content ng Sheet */}
       <SheetContent
         side="left"
-        className="!max-w-none !w-[340px] sm:!w-[500px] lg:!w-[730px] py-15 sm:py-17 px-4 lg:px-20"
+        className="!max-w-none !w-[340px] sm:!w-[500px] lg:!w-[730px] py-15 sm:py-17 lg:py-30 px-4 lg:px-20"
       >
         <SheetHeader style={{ fontFamily: "satoshi-medium" }}>
           <SheetTitle className={"text-sm lg:text-base tracking-[0.4px] mb-10"}>
@@ -71,23 +71,6 @@ export default function ContactSheet() {
             </span>
           }
         />
-        </div>
-
-        <div className="mt-20">
-          <h6
-            className="text-xl lg:text-2xl text-center uppercase mb-4"
-            style={{ fontFamily: "oswald" }}
-          >
-            Molave Street Barbers
-          </h6>
-          <p
-            className="text-sm lg:text-base text-center tracking-[0.4px]"
-            style={{ fontFamily: "satoshi-medium" }}
-          >
-            Location: 112 Upper Molave Street Payatas B. 1119 Quezon City, Philippines
-            <br />
-            Working Hours: Monday to Sunday 10:00am to 8:00pm
-          </p>
         </div>
       </SheetContent>
     </Sheet>

@@ -9,6 +9,8 @@ function About() {
   const videoSectionRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [isMuted, setIsMuted] = useState(true)
+  const [testimonials, setTestimonials] = useState([]);
+  const [loadingTestimonials, setLoadingTestimonials] = useState(true);
 
     // Reference for in-view animation
     const barbersRef = useRef(null)
@@ -38,6 +40,22 @@ function About() {
     }
     fetchBarbers()
   }, [])
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      const { data, error } = await supabase
+        .from("testimonials")
+        .select("*")
+        .order("created_at", { ascending: false });
+
+      if (error) console.error("Error fetching testimonials:", error.message);
+      else setTestimonials(data);
+
+      setLoadingTestimonials(false);
+    };
+
+    fetchTestimonials();
+  }, []);
 
   const scrollToVideo = (e) => {
     e.preventDefault()
@@ -289,48 +307,26 @@ function About() {
         viewport={{ once: true }}
         className="min-h-screen px-20 pb-20"
       >
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-          {[
-            {
-              name: "John David Delacruz",
-              position: "Molave Street Legend",
-              content: `"Molave Street Barbers always gets it right. The barbers here really know men's styles and give clean, sharp cuts every time. The atmosphere is chill, the barbers are friendly, and you walk out feeling fresh and confident. Best barbershop in community!"`,
-            },
-            {
-              name: "Nick Reyes",
-              position: "Molave Street Legend",
-              content: `"The fade was perfect, the service was quick, and the vibe was on point. You can tell these barbers know their craft. Definitely my go to barbershop!"`,
-            },
-            {
-              name: "Christopher Gonzales",
-              position: "Molave Street Legend",
-              content: `"I've been getting my cuts at Molave Street Barbers for over a year now, and they never miss. Every barber here is skilled, consistent, and pays attention to the smallest details. I always leave with a clean, sharp look that lasts. The hot towel treatment is the perfect finish and feels like a quick spa session made for men."`,
-            },
-            {
-              name: "John Ken Mendoza",
-              position: "Molave Street Legend",
-              content: `"Molave Street Barbers is the real deal. The prices are affordable, but the quality feels premium. My barber helped me pick a style that fits my look, and I walked out feeling more confident than ever. The whole crew is friendly and really knows what they're doing."`,
-            },
-            {
-              name: "Ramil Bautista",
-              position: "Molave Street Legend",
-              content: `"Tried their home service and it was solid! The barber came fully equipped, professional, and delivered the same quality cut as in the shop. Super convenient if you're on a tight schedule but still want that clean, barbershop finish."`,
-            },
-            {
-              name: "Leo Castro",
-              position: "Molave Street Legend",
-              content: `"Affordable, stylish, and legit barbers who know men's grooming. They helped me choose a haircut that fits my face and personality. I left the shop feeling confident and fresh. This place really hits different!"`,
-            },
-          ].map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              name={testimonial.name}
-              position={testimonial.position}
-              content={testimonial.content}
-            />
-          ))}
-        </div>
+        {loadingTestimonials ? (
+          <p className="text-center text-gray-500 mt-10">Loading testimonials...</p>
+        ) : testimonials.length === 0 ? (
+          <p className="text-center text-gray-500 mt-10 italic">
+            No testimonials added yet.
+          </p>
+        ) : (
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+            {testimonials.map((testimonial) => (
+              <TestimonialCard
+                key={testimonial.id}
+                name={testimonial.name}
+                position={testimonial.position}
+                content={testimonial.content}
+              />
+            ))}
+          </div>
+        )}
       </motion.div>
+
     </div>
   )
 }
