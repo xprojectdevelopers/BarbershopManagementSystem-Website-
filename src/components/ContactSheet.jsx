@@ -23,7 +23,7 @@ export default function ContactSheet() {
       {/* Ito yung content ng Sheet */}
       <SheetContent
         side="left"
-        className="!max-w-none !w-[340px] sm:!w-[500px] lg:!w-[730px] py-15 sm:py-17 lg:py-20 px-4 lg:px-20"
+        className="!max-w-none !w-[340px] sm:!w-[500px] lg:!w-[730px] py-15 sm:py-17 px-4 lg:px-20"
       >
         <SheetHeader style={{ fontFamily: "satoshi-medium" }}>
           <SheetTitle className={"text-sm lg:text-base tracking-[0.4px] mb-10"}>
