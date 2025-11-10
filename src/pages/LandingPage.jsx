@@ -139,7 +139,7 @@ const LandingPage = () => {
                 <img src={M2} alt="Save Your Spot" loading='lazy' className='h-120'/>
               </div>
               <p className='mb-3'>Let's Save Your Spot</p>
-              <a href="#" className='underline'>MLV ST. (Get App)</a>
+              <a href="https://expo.dev/accounts/fr4nc/projects/MolaveStreetBarbers/builds/fc3b5af0-b503-4aab-8287-3b74f6de4b5f" className='underline'>MLV ST. (Get App)</a>
             </div>
             <div className='text-center text-sm lg:text-base flex flex-col gap-2 mt-4 lg:mt-0'>
               <div className='lg:mb-4'>

@@ -79,13 +79,16 @@ const Header = () => {
 
               {/* Buttons */}
               <div className="space-y-3">
-                <button
-                  type="submit"
-                  className="w-full bg-black text-white text-base py-4 rounded-full hover:bg-gray-900 cursor-pointer"
+                <a
+                  href="https://expo.dev/accounts/fr4nc/projects/MolaveStreetBarbers/builds/fc3b5af0-b503-4aab-8287-3b74f6de4b5f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block text-center bg-black text-white text-base py-4 rounded-full hover:bg-gray-900 cursor-pointer"
                   style={{ fontFamily: 'satoshi-medium' }}
                 >
                   Get App
-                </button>
+                </a>
+
                 <DialogTrigger asChild>
                   <button className='w-full border border-black py-4 text-base rounded-full hover:bg-gray-200 mt-2 cursor-pointer'
                     style={{ fontFamily: 'satoshi-medium' }}>
