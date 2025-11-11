@@ -80,7 +80,7 @@ const Header = () => {
               {/* Buttons */}
               <div className="space-y-3">
                 <a
-                  href="https://expo.dev/accounts/fr4nc/projects/MolaveStreetBarbers/builds/fc3b5af0-b503-4aab-8287-3b74f6de4b5f"
+                  href="https://github.com/xprojectdevelopers/BarbershopManagementSystem-Mobile/releases/download/Mobile_App/application-36f9156f-cae0-4276-8cc1-469ec416b0c0.apk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full block text-center bg-black text-white text-base py-4 rounded-full hover:bg-gray-900 cursor-pointer"
